@@ -26,4 +26,4 @@ jobs:
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git --force push https://HF_USERNAME:$HF_TOKEN@huggingface.co/spaces/Mayankojhaa/drug-detect-ai main
+        run: git push --force https://$HF_TOKEN@huggingface.co/spaces/Mayankojhaa/drug-detect-ai main
