@@ -26,4 +26,11 @@ jobs:
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push --force https://$HF_TOKEN@huggingface.co/spaces/Mayankojhaa/drug-detect-ai main
+        run:
+          git config --global user.email "actions@github.com"
+          git config --global user.name "github-actions"
+          
+          git add .
+          git commit -m "Sync to HF" || echo "No changes"
+          
+          git push --force https://Mayankojhaa:$HF_TOKEN@huggingface.co/spaces/Mayankojhaa/drug-detect-ai main
