@@ -11,10 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/upload-artifact@v4
         with:
           fetch-depth: 0
           lfs: true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: artifact
+          path: ./your-folder-or-files
+          if-no-files-found: warn
+          compression-level: 6
+          overwrite: false
+          include-hidden-files: false
       - name: Push to hub
         env:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
