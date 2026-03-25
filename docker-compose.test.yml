@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  test-suite:
+    build: .
+    environment:
+      - SUPABASE_URL=http://mock.supabase.co
+      - SUPABASE_KEY=mock-key
+      - TELEGRAM_API_ID=123
+      - TELEGRAM_API_HASH=abc
+    command: >
+      sh -c "pip install -r requirements-test.txt && 
+             pytest test_drugnet.py --cov=app --cov-report=term-missing -v"

@@ -1,0 +1,72 @@
+[
+  {
+    "platform": "telegram",
+    "handle": "@darkmarket_mumbai",
+    "raw_text": "🚨 FRESH STOCK: Pure Heroin (Grade A) in South Bombay. 📲 +91-90040-12345. Price: ₹4,000/g. Crypto: 1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX",
+    "captured_at": "2026-03-24T10:00:00",
+    "risk_score": 0.98,
+    "classification": "marketing",
+    "entities": {
+      "phones": ["+919004012345"],
+      "emails": [],
+      "crypto": ["1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX"],
+      "locations": [{"city": "Mumbai", "country": "India"}]
+    }
+  },
+  {
+    "platform": "instagram",
+    "handle": "high_life_delhi",
+    "raw_text": "Crystal Meth (Blue) 💎 drop in Dwarka, Delhi. DM for details. Payment: ETH 0x2bE4dBf7...",
+    "captured_at": "2026-03-24T12:00:00",
+    "risk_score": 0.95,
+    "classification": "high_risk",
+    "entities": {
+      "phones": [],
+      "emails": [],
+      "crypto": ["0x2bE4dBf7cda9890987"],
+      "locations": [{"city": "Delhi", "country": "India"}]
+    }
+  },
+  {
+    "platform": "telegram",
+    "handle": "@cartel_bangalore",
+    "raw_text": "Shipment arriving at Bangalore airport. Need 5 delivery riders. Good pay + bonus stuff. +91 80808 80808",
+    "captured_at": "2026-03-24T14:30:00",
+    "risk_score": 0.82,
+    "classification": "recruitment",
+    "entities": {
+      "phones": ["+918080880808"],
+      "emails": [],
+      "crypto": [],
+      "locations": [{"city": "Bangalore", "country": "India"}]
+    }
+  },
+  {
+    "platform": "telegram",
+    "handle": "@goa_party_connect",
+    "raw_text": "LSD tabs for tonight's beach party in Vagator. 🏖️ Search near sunset point. +9170200-XXXXX",
+    "captured_at": "2026-03-24T18:00:00",
+    "risk_score": 0.90,
+    "classification": "marketing",
+    "entities": {
+      "phones": ["+917020000000"],
+      "emails": [],
+      "crypto": [],
+      "locations": [{"city": "Goa", "country": "India"}]
+    }
+  },
+  {
+    "platform": "telegram",
+    "handle": "@drugnetdemo_bot",
+    "raw_text": "Looking for ketamine suppliers in Punjab region. Large scale only.",
+    "captured_at": "2026-03-25T08:15:00",
+    "risk_score": 0.70,
+    "classification": "purchase_intent",
+    "entities": {
+      "phones": [],
+      "emails": [],
+      "crypto": [],
+      "locations": [{"state": "Punjab", "country": "India"}]
+    }
+  }
+]
